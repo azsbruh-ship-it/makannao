@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าหลัก | ประวัติส่วนตัว</title>
+
+    <style>
+        body {
+            font-family: "Prompt", sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 2;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #0263e0;
+        }
+
+        /* พื้นหลังภาพ */
+        .hero {
+            background-image: url('Arthur..jpg'); /* <<< ใส่ชื่อไฟล์ภาพของคุณที่นี่ */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        /* ม่านดำบาง ๆ ทับพื้นหลัง */
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        /* กล่องข้อความ */
+        .intro-box {
+            position: relative;
+            z-index: 2;
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 40px;
+            border-radius: 12px;
+            max-width: 600px;
+            backdrop-filter: blur(6px);
+        }
+
+        .intro-box h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .intro-box p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #01337d;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* สำหรับมือถือ */
+        @media (max-width: 600px) {
+            .intro-box {
+                padding: 20px;
+                margin: 20px;
+            }
+            .intro-box h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>เว็บไซต์ประวัติส่วนตัวของฉัน</h1>
+    </header>
+
+    <nav>
+        <a href="#">หน้าแรก</a>
+        <a href="#">ประวัติการศึกษา</a>
+        <a href="#">ประวัติการทำงาน</a>
+        <a href="#">ผลงาน</a>
+        <a href="#">ช่องทางติดต่อ</a>
+    </nav>
+
+    <section class="hero">
+        <div class="intro-box">
+            <h2>สวัสดีครับ ผมชื่อ [ชื่อของคุณ]</h2>
+            <p>ผมเป็น [อาชีพหรือสาขาที่คุณทำ เช่น “นักพัฒนาเว็บไซต์”, “นักออกแบบกราฟิก”, “นักศึกษาคณะวิศวกรรมศาสตร์”]  
+            มีความสนใจในด้าน [ใส่ความสนใจหรือความสามารถพิเศษ]  
+            ยินดีต้อนรับเข้าสู่เว็บไซต์แนะนำตัวของผมครับ!</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 สงวนลิขสิทธิ์โดย [ชื่อของคุณ]</p>
+    </footer>
+
+</body>
+</html>
